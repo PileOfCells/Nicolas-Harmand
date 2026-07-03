@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microrhéométrie & Forces tissulaires — Nicolas Harmand</title>
+    <meta name="description" content="Axe de recherche sur la microrhéométrie et les forces tissulaires.">
+    <link rel="stylesheet" href="style.css?v=2.0.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barre de navigation latérale -->
+    <header class="sidebar">
+        <a href="index.html" class="nav-logo">Nicolas Harmand</a>
+        <p class="nav-subtitle">
+            <span class="lang-fr">Chercheur au CNRS<br>Sorbonne Université</span>
+            <span class="lang-en">CNRS Research Fellow<br>Sorbonne Université</span>
+        </p>
+        <nav class="nav-menu">
+            <a href="index.html#about" class="nav-link">
+                <span class="lang-fr">À propos</span>
+                <span class="lang-en">About me</span>
+            </a>
+            <a href="index.html#research" class="nav-link active">
+                <span class="lang-fr">Recherche</span>
+                <span class="lang-en">Research</span>
+            </a>
+            <!-- Sous-menu de recherche -->
+            <div class="nav-submenu">
+                <a href="research-microrheometry.html" class="nav-sublink active">
+                    <span class="lang-fr">Microrhéométrie</span>
+                    <span class="lang-en">Microrheometry</span>
+                </a>
+                <a href="research-epithelia.html" class="nav-sublink">
+                    <span class="lang-fr">Mécanique épithéliale</span>
+                    <span class="lang-en">Epithelial Mechanics</span>
+                </a>
+            </div>
+            
+            <a href="index.html#publications" class="nav-link">
+                <span class="lang-fr">Publications</span>
+                <span class="lang-en">Publications</span>
+            </a>
+            <a href="index.html#integration" class="nav-link">
+                <span class="lang-fr">Collaborations</span>
+                <span class="lang-en">Collaborations</span>
+            </a>
+            <a href="index.html#journey" class="nav-link">
+                <span class="lang-fr">Parcours</span>
+                <span class="lang-en">Journey</span>
+            </a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            
+            <button id="lang-toggle" class="lang-btn" aria-label="Changer de langue / Switch language">
+                <span class="lang-fr">English</span>
+                <span class="lang-en">Français</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <a href="index.html#research" class="back-link">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span class="lang-fr">Retour à la recherche</span>
+            <span class="lang-en">Back to research</span>
+        </a>
+
+        <section class="section" style="padding-top: 0;">
+            <h1 class="section-title" style="font-size: 2.5rem; margin-bottom: 20px;">
+                <span class="lang-fr">Microrhéométrie & Forces tissulaires</span>
+                <span class="lang-en">Microrheometry & Tissue Forces</span>
+            </h1>
+            
+            <p class="bio lang-fr" style="margin-bottom: 40px; max-width: 100%;">
+                Développement de techniques de microrhéométrie in situ lors de l'embryogenèse (utilisation de gouttes ferrofluides) pour sonder les propriétés mécaniques de la matrice extracellulaire.
+            </p>
+            <p class="bio lang-en" style="margin-bottom: 40px; max-width: 100%;">
+                Development of in situ microrheometry techniques during embryogenesis (using ferrofluid droplets) to probe the mechanical properties of the extracellular matrix.
+            </p>
+
+            <div class="content-body" style="font-size: 1.05rem; color: var(--text-secondary); max-width: 800px; display: flex; flex-direction: column; gap: 20px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.</p>
+                <img src="https://via.placeholder.com/800x400?text=Placeholder+Image" alt="Placeholder for research image" style="width: 100%; border-radius: 8px; margin: 20px 0; border: 1px solid var(--border);">
+                <p>Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Nicolas Harmand.</p>
+    </footer>
+
+    <script>
+        const titles = {
+            fr: "Microrhéométrie & Forces tissulaires — Nicolas Harmand",
+            en: "Microrheometry & Tissue Forces — Nicolas Harmand"
+        };
+        const toggleLangBtn = document.getElementById('lang-toggle');
+
+        function updateMeta(lang) {
+            document.documentElement.lang = lang;
+            document.title = titles[lang];
+        }
+
+        function setLanguage(lang) {
+            updateMeta(lang);
+            localStorage.setItem('preferred-lang', lang);
+        }
+
+        toggleLangBtn.addEventListener('click', () => {
+            const currentLang = document.documentElement.lang || 'fr';
+            const newLang = currentLang === 'fr' ? 'en' : 'fr';
+            setLanguage(newLang);
+        });
+
+        const savedLang = localStorage.getItem('preferred-lang') || 'fr';
+        setLanguage(savedLang);
+    </script>
+</body>
+</html>

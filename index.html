@@ -21,44 +21,42 @@
 </head>
 <body>
 
-    <!-- Barre de navigation sticky -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Nicolas Harmand</a>
-            <nav class="nav-menu">
-                <a href="#about" class="nav-link">
-                    <span class="lang-fr">À propos</span>
-                    <span class="lang-en">About</span>
-                </a>
-                <a href="#vision" class="nav-link">
-                    <span class="lang-fr">Vision Scientifique</span>
-                    <span class="lang-en">Research Vision</span>
-                </a>
-                <a href="#research" class="nav-link">
-                    <span class="lang-fr">Thématiques</span>
-                    <span class="lang-en">Themes</span>
-                </a>
-                <a href="#publications" class="nav-link">
-                    <span class="lang-fr">Publications & Brevets</span>
-                    <span class="lang-en">Publications & Patents</span>
-                </a>
-                <a href="#integration" class="nav-link">
-                    <span class="lang-fr">Réseau & Rayonnement</span>
-                    <span class="lang-en">Network & Outreach</span>
-                </a>
-                <a href="#journey" class="nav-link">
-                    <span class="lang-fr">Parcours</span>
-                    <span class="lang-en">Journey</span>
-                </a>
-                <a href="#contact" class="nav-link">Contact</a>
-                
-                <!-- Bouton de changement de langue -->
-                <button id="lang-toggle" class="lang-btn" aria-label="Changer de langue / Switch language">
-                    <span class="lang-fr">EN</span>
-                    <span class="lang-en">FR</span>
-                </button>
-            </nav>
-        </div>
+    <!-- Barre de navigation latérale -->
+    <header class="sidebar">
+        <a href="index.html" class="nav-logo">Nicolas Harmand</a>
+        <p class="nav-subtitle">
+            <span class="lang-fr">Chercheur au CNRS<br>Sorbonne Université</span>
+            <span class="lang-en">CNRS Research Fellow<br>Sorbonne Université</span>
+        </p>
+        <nav class="nav-menu">
+            <a href="index.html#about" class="nav-link active">
+                <span class="lang-fr">À propos</span>
+                <span class="lang-en">About me</span>
+            </a>
+            <a href="index.html#research" class="nav-link">
+                <span class="lang-fr">Recherche</span>
+                <span class="lang-en">Research</span>
+            </a>
+            <a href="index.html#publications" class="nav-link">
+                <span class="lang-fr">Publications</span>
+                <span class="lang-en">Publications</span>
+            </a>
+            <a href="index.html#integration" class="nav-link">
+                <span class="lang-fr">Collaborations</span>
+                <span class="lang-en">Collaborations</span>
+            </a>
+            <a href="index.html#journey" class="nav-link">
+                <span class="lang-fr">Parcours</span>
+                <span class="lang-en">Journey</span>
+            </a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            
+            <!-- Bouton de changement de langue -->
+            <button id="lang-toggle" class="lang-btn" aria-label="Changer de langue / Switch language">
+                <span class="lang-fr">English</span>
+                <span class="lang-en">Français</span>
+            </button>
+        </nav>
     </header>
 
     <main class="main-content">
@@ -115,15 +113,27 @@
         </section>
 
 
-        <!-- Section Axes de Recherche -->
+        <!-- Section Recherche -->
         <section id="research" class="section">
             <h2 class="section-title">
-                <span class="lang-fr">Axes de Recherche principaux</span>
-                <span class="lang-en">Main Research Areas</span>
+                <span class="lang-fr">Recherche</span>
+                <span class="lang-en">Research</span>
             </h2>
+            
+            <div class="research-intro">
+                <p class="lang-fr" style="margin-bottom: 1.5rem;">
+                    <strong>Comment l'hétérogénéité cellulaire et la mécanique tissulaire s'influencent-elles mutuellement ?</strong><br>
+                    Les tissus biologiques sont des matériaux actifs et hétérogènes. Que ce soit au cours de l'embryogenèse ou de la progression tumorale, la manière dont les propriétés mécaniques (déformations, écoulements) et les hétérogénéités cellulaires (adhésion, contractilité) rétroagissent reste largement incomprise. Je développe un cadre expérimental modèle-agnostique pour relier déformations tissulaires globales et réarrangements topologiques locaux, et j'étudie la dynamique d'écoulement de populations cellulaires distinctes.
+                </p>
+                <p class="lang-en" style="margin-bottom: 1.5rem;">
+                    <strong>How do cellular heterogeneity and tissue mechanics mutually influence each other?</strong><br>
+                    Biological tissues are active and heterogeneous materials. Whether during embryogenesis or tumor progression, the way mechanical properties (deformations, flows) and cellular heterogeneities (adhesion, contractility) feedback on each other remains largely misunderstood. I develop a model-agnostic experimental framework linking global tissue deformations to local topological rearrangements, and I study the flow dynamics of distinct cellular populations.
+                </p>
+            </div>
+
             <div class="grid-research">
                 <!-- Axe 1 -->
-                <div class="research-card">
+                <a href="research-microrheometry.html" class="research-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v12"/><path d="M6 12h12"/></svg>
                     </div>
@@ -131,12 +141,12 @@
                         <span class="lang-fr">Microrhéométrie & Forces tissulaires</span>
                         <span class="lang-en">Microrheometry & Tissue Forces</span>
                     </h3>
-                    <p class="lang-fr">Développement de techniques de microrhéométrie in situ lors de l'embryogenèse (utilisation de gouttes ferrofluides) pour sonder les propriétés mécaniques de la matrice extracellulaire.</p>
-                    <p class="lang-en">Development of in situ microrheometry techniques during embryogenesis (using ferrofluid droplets) to probe the mechanical properties of the extracellular matrix.</p>
-                </div>
+                    <p class="lang-fr">Développement de techniques de microrhéométrie in situ lors de l'embryogenèse (utilisation de gouttes ferrofluides).</p>
+                    <p class="lang-en">Development of in situ microrheometry techniques during embryogenesis (using ferrofluid droplets).</p>
+                </a>
                 
                 <!-- Axe 2 -->
-                <div class="research-card">
+                <a href="research-epithelia.html" class="research-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
@@ -144,134 +154,9 @@
                         <span class="lang-fr">Mécanique des tissus épithéliaux</span>
                         <span class="lang-en">Epithelial Tissue Mechanics</span>
                     </h3>
-                    <p class="lang-fr">Étude de la forme 3D et de l'épaisseur des cellules épithéliales sur des substrats courbes. Modélisation quantitative via les notions de tensions de surface et de ligne.</p>
-                    <p class="lang-en">Study of the 3D shape and thickness of epithelial cells on curved substrates. Quantitative modeling through surface and line tension concepts.</p>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- Section Vision Scientifique -->
-        <section id="vision" class="section">
-            <h2 class="section-title">
-                <span class="lang-fr">Vision Scientifique & Projet</span>
-                <span class="lang-en">Scientific Vision & Project</span>
-            </h2>
-            
-            <div class="vision-container" style="background: var(--bg-secondary); padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border);">
-                <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.5rem;">
-                    <span class="lang-fr">Comment l'hétérogénéité cellulaire et la mécanique tissulaire s'influencent-elles mutuellement ?</span>
-                    <span class="lang-en">How do cellular heterogeneity and tissue mechanics mutually influence each other?</span>
-                </h3>
-                <p class="lang-fr" style="margin-bottom: 1.5rem; line-height: 1.7;">
-                    Les tissus biologiques sont des matériaux actifs et hétérogènes. Que ce soit au cours de l'embryogenèse ou de la progression tumorale, la manière dont les propriétés mécaniques (déformations, écoulements) et les hétérogénéités cellulaires (adhésion, contractilité) rétroagissent reste largement incomprise.
-                </p>
-                <p class="lang-en" style="margin-bottom: 1.5rem; line-height: 1.7;">
-                    Biological tissues are active and heterogeneous materials. Whether during embryogenesis or tumor progression, the way mechanical properties (deformations, flows) and cellular heterogeneities (adhesion, contractility) feedback on each other remains largely misunderstood.
-                </p>
-                
-                <!-- Schéma interactif -->
-                <div style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0; flex-wrap: wrap; gap: 1.5rem;">
-                    <!-- Hétérogénéité Tissulaire -->
-                    <div style="display: flex; flex-direction: column; align-items: center;">
-                        <svg width="100" height="100" viewBox="0 0 100 100" style="margin-bottom: 10px; overflow: visible;">
-                            <defs>
-                                <clipPath id="tissueClip">
-                                    <circle cx="50" cy="50" r="48" />
-                                </clipPath>
-                            </defs>
-                            <g clip-path="url(#tissueClip)">
-                                <!-- Cellules irrégulières - Population 1 -->
-                                <path d="M0 0 L45 0 L35 45 L0 35 Z" fill="#eff6ff" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="20" cy="20" r="2.5" fill="var(--accent)"/>
-                                <path d="M100 0 L100 40 L75 30 Z" fill="#eff6ff" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="90" cy="20" r="2.5" fill="var(--accent)"/>
-                                <path d="M35 45 L75 30 L70 70 L40 85 Z" fill="#eff6ff" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="55" cy="58" r="2.5" fill="var(--accent)"/>
-                                <path d="M0 75 L40 85 L55 100 L0 100 Z" fill="#eff6ff" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="25" cy="90" r="2.5" fill="var(--accent)"/>
-                                
-                                <!-- Cellules irrégulières - Population 2 -->
-                                <path d="M45 0 L100 0 L75 30 L35 45 Z" fill="#bfdbfe" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="65" cy="18" r="2.5" fill="var(--accent)"/>
-                                <path d="M0 35 L35 45 L40 85 L0 75 Z" fill="#bfdbfe" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="18" cy="60" r="2.5" fill="var(--accent)"/>
-                                <path d="M75 30 L100 40 L100 80 L70 70 Z" fill="#bfdbfe" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="85" cy="55" r="2.5" fill="var(--accent)"/>
-                                <path d="M40 85 L70 70 L100 80 L100 100 L55 100 Z" fill="#bfdbfe" stroke="var(--accent)" stroke-width="1.5"/>
-                                <circle cx="75" cy="85" r="2.5" fill="var(--accent)"/>
-                            </g>
-                            <circle cx="50" cy="50" r="48" fill="none" stroke="var(--accent)" stroke-width="2"/>
-                        </svg>
-                        <p style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-align: center;">
-                            <span class="lang-fr">Hétérogénéité Cellulaire</span>
-                            <span class="lang-en">Cellular Heterogeneity</span>
-                        </p>
-                    </div>
-
-                    <!-- Flèches d'interdépendance -->
-                    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; margin: 0 1rem;">
-                        <div style="display: flex; flex-direction: column; align-items: center; color: var(--accent);">
-                            <span style="font-size: 0.8rem; font-weight: 600;" class="lang-fr">Propriétés effectives</span>
-                            <span style="font-size: 0.8rem; font-weight: 600;" class="lang-en">Effective properties</span>
-                            <svg width="80" height="20" viewBox="0 0 80 20">
-                                <line x1="0" y1="10" x2="70" y2="10" stroke="currentColor" stroke-width="2"/>
-                                <polygon points="65,5 75,10 65,15" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div style="display: flex; flex-direction: column; align-items: center; color: var(--text-secondary);">
-                            <svg width="80" height="20" viewBox="0 0 80 20">
-                                <line x1="10" y1="10" x2="80" y2="10" stroke="currentColor" stroke-width="2"/>
-                                <polygon points="15,5 5,10 15,15" fill="currentColor"/>
-                            </svg>
-                            <span style="font-size: 0.8rem; font-weight: 600;" class="lang-fr">Contraintes & Ségrégation</span>
-                            <span style="font-size: 0.8rem; font-weight: 600;" class="lang-en">Stresses & Segregation</span>
-                        </div>
-                    </div>
-
-                    <!-- Rhéologie -->
-                    <div style="display: flex; flex-direction: column; align-items: center;">
-                        <svg width="100" height="100" viewBox="0 0 100 100" style="margin-bottom: 10px; overflow: visible;">
-                            <!-- Modèle de Kelvin-Voigt symbolique (Ressort et Amortisseur) -->
-                            <!-- Ressort -->
-                            <path d="M20 30 L40 30 L45 20 L55 40 L65 20 L75 40 L80 30 L100 30" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
-                            <!-- Amortisseur -->
-                            <path d="M20 70 L55 70" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                            <path d="M55 60 L55 80" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                            <path d="M45 55 L75 55 L75 85 L45 85" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                            <path d="M75 70 L100 70" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                            <!-- Connexions -->
-                            <line x1="20" y1="30" x2="20" y2="70" stroke="var(--accent)" stroke-width="2.5"/>
-                            <line x1="100" y1="30" x2="100" y2="70" stroke="var(--accent)" stroke-width="2.5"/>
-                            <line x1="5" y1="50" x2="20" y2="50" stroke="var(--accent)" stroke-width="2.5"/>
-                            <line x1="100" y1="50" x2="115" y2="50" stroke="var(--accent)" stroke-width="2.5"/>
-                        </svg>
-                        <p style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-align: center;">
-                            <span class="lang-fr">Rhéologie Tissulaire</span>
-                            <span class="lang-en">Tissue Rheology</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="vision-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                    <div class="vision-item">
-                        <h4 style="margin-bottom: 0.5rem; font-weight: 600;">
-                            <span class="lang-fr">1. Fondations Rhéologiques</span>
-                            <span class="lang-en">1. Rheological Foundations</span>
-                        </h4>
-                        <p class="lang-fr" style="font-size: 0.95rem; color: var(--text-secondary);">Développement d'un cadre expérimental modèle-agnostique pour relier déformations tissulaires globales et réarrangements topologiques locaux.</p>
-                        <p class="lang-en" style="font-size: 0.95rem; color: var(--text-secondary);">Development of a model-agnostic experimental framework linking global tissue deformations to local topological rearrangements.</p>
-                    </div>
-                    <div class="vision-item">
-                        <h4 style="margin-bottom: 0.5rem; font-weight: 600;">
-                            <span class="lang-fr">2. Ségrégation Cellulaire</span>
-                            <span class="lang-en">2. Cell Segregation</span>
-                        </h4>
-                        <p class="lang-fr" style="font-size: 0.95rem; color: var(--text-secondary);">Étude de la dynamique d'écoulement de deux populations cellulaires distinctes (optogénétique, mutants d'adhésion).</p>
-                        <p class="lang-en" style="font-size: 0.95rem; color: var(--text-secondary);">Study of the flow dynamics of two distinct cellular populations (optogenetics, adhesion mutants).</p>
-                    </div>
-                </div>
+                    <p class="lang-fr">Étude de la forme 3D et de l'épaisseur des cellules épithéliales sur des substrats courbes via des modèles continus.</p>
+                    <p class="lang-en">Study of the 3D shape and thickness of epithelial cells on curved substrates through continuous models.</p>
+                </a>
             </div>
         </section>
 
@@ -414,11 +299,11 @@
             </div>
         </section>
 
-        <!-- Section Rayonnement et Intégration -->
+        <!-- Section Collaborations -->
         <section id="integration" class="section">
             <h2 class="section-title">
-                <span class="lang-fr">Réseau, Rayonnement & Intégration</span>
-                <span class="lang-en">Network, Outreach & Integration</span>
+                <span class="lang-fr">Collaborations</span>
+                <span class="lang-en">Collaborations</span>
             </h2>
             <div class="distinctions-container">
                 
